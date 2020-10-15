@@ -1,0 +1,125 @@
+﻿body,html{ height:100%; margin:0;}    
+#conteiner{min-height:100%; } 
+#content {
+    width: 99%;
+    margin:0 auto;
+    position: relative;
+    background: #CCC;
+    margin-bottom:100px;
+}
+#header-top {
+    height: 40px;
+    width: 98%;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-top: 13px;
+    background: #0e689c; /*#5597ba  606062 #3D5277; */
+    border-bottom: 3px solid #2a6478;
+}
+#Logo1 {   
+    float: left;
+    width: 60px;
+    height: 30px;
+}
+
+#logo2 {
+    font-size: 16px;
+    width: 130px;
+    float: left;
+}
+
+#nombreform {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', Verdana, 'Arial Rounded MT', Helvetica, sans-serif;
+    text-align: center;
+    width: 1000px;
+    float: left;
+}
+
+#divusuario {
+    font-size: 14px;
+    margin-right: 10px;
+    text-align: right;
+    width: 220px;
+    float: right;
+    color: #FFF;
+}
+#lateral
+{
+    min-width:200px;
+    width: 17%;
+    float:left;
+    background:#dfe3ec; /* #dfe3ec #c9e6fa  #e6eaed  #3D5277; */    
+    border:1px solid #b9b9b9;     
+}
+#contenido
+{
+    padding-top:5px;
+    padding-left:15px;
+    width: 78%;
+    float:right;  
+}
+#footer {
+    color: #EEE;
+    width: 100%;
+    height: 50px;
+    margin-top: -50px;
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #007fff;
+    background: #000000;
+}
+
+tr.over td{
+background: #D6E8F8;
+font-weight: bold;
+}
+
+/*Formularios*/
+.divform
+{
+    position:absolute;
+    padding-top:10px;
+    padding-left:10px;
+    width:580px;   
+    margin:0 auto;
+    background:#fff; /* #b5de9c; */ 
+    border:1px solid #b9b9b9; 
+}
+.divetiquetas
+{
+    float:left;
+    width:130px;
+    height:32px;
+}
+.divcontrol
+{
+    height:32px;
+}
+.control1
+{
+    width:120px;
+}
+.control2
+{
+    width:400px;
+}
+.control3 {
+    width: 270px;
+}
+.divboton
+{
+    padding-top:10px;
+    width:571px;
+    height:30px;
+    text-align:center;
+    background:#dfe3ec;
+    margin-right: 25px;
+}
+#divTable{
+    border:1px solid #b9b9b9;  
+}
+/*Formularios*/

@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE7733A7-40F1-4B2B-8C80-DD8C5A8C4804}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web_SiscoServ</RootNamespace>
+    <AssemblyName>Web_SiscoServ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SiscoServ_temp\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ActualizaContrasena.aspx" />
+    <Content Include="Admin\AdminUsuario.aspx" />
+    <Content Include="Admin\AsignarEmpresa.aspx" />
+    <Content Include="Catalogos\catClientes.aspx" />
+    <Content Include="Catalogos\catColaborador.aspx" />
+    <Content Include="Catalogos\catConsumo.aspx" />
+    <Content Include="Catalogos\catEmpresa.aspx" />
+    <Content Include="Catalogos\catEquipos.aspx" />
+    <Content Include="Catalogos\catInsumos.aspx" />
+    <Content Include="Catalogos\catLaboratorio.aspx" />
+    <Content Include="Catalogos\catServicLaboratorio.aspx" />
+    <Content Include="Consultas\conClientes.aspx" />
+    <Content Include="Consultas\conColaborador.aspx" />
+    <Content Include="Consultas\conConsumo.aspx" />
+    <Content Include="Consultas\conEmpresa.aspx" />
+    <Content Include="Consultas\conEquipos.aspx" />
+    <Content Include="Consultas\conInsumos.aspx" />
+    <Content Include="Consultas\conLaboratorio.aspx" />
+    <Content Include="Consultas\conServicLaboratorio.aspx" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.min.cdn.css" />
+    <Content Include="Content\DataTables\css\jquery.dataTables.min.css" />
+    <Content Include="Content\DataTables\images\details_close.png" />
+    <Content Include="Content\DataTables\images\details_open.png" />
+    <Content Include="Content\DataTables\images\sort_asc.png" />
+    <Content Include="Content\DataTables\images\sort_asc_disabled.png" />
+    <Content Include="Content\DataTables\images\sort_both.png" />
+    <Content Include="Content\DataTables\images\sort_desc.png" />
+    <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
+    <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="default.aspx" />
+    <Content Include="Img\img_Logo_.png" />
+    <Content Include="Img\login_2.png" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Operaciones\opePaquete.aspx" />
+    <Content Include="Scripts\DataTables\jquery.dataTables.js" />
+    <Content Include="Scripts\DataTables\jquery.dataTables.min.cdn.js" />
+    <Content Include="Scripts\DataTables\jquery.dataTables.min.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-3.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Menu.css" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Styles.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ActualizaContrasena.aspx.cs">
+      <DependentUpon>ActualizaContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ActualizaContrasena.aspx.designer.cs">
+      <DependentUpon>ActualizaContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUsuario.aspx.cs">
+      <DependentUpon>AdminUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUsuario.aspx.designer.cs">
+      <DependentUpon>AdminUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AsignarEmpresa.aspx.cs">
+      <DependentUpon>AsignarEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AsignarEmpresa.aspx.designer.cs">
+      <DependentUpon>AsignarEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catClientes.aspx.cs">
+      <DependentUpon>catClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catClientes.aspx.designer.cs">
+      <DependentUpon>catClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catColaborador.aspx.cs">
+      <DependentUpon>catColaborador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catColaborador.aspx.designer.cs">
+      <DependentUpon>catColaborador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catConsumo.aspx.cs">
+      <DependentUpon>catConsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catConsumo.aspx.designer.cs">
+      <DependentUpon>catConsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catEmpresa.aspx.cs">
+      <DependentUpon>catEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catEmpresa.aspx.designer.cs">
+      <DependentUpon>catEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catEquipos.aspx.cs">
+      <DependentUpon>catEquipos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catEquipos.aspx.designer.cs">
+      <DependentUpon>catEquipos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catInsumos.aspx.cs">
+      <DependentUpon>catInsumos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catInsumos.aspx.designer.cs">
+      <DependentUpon>catInsumos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catLaboratorio.aspx.cs">
+      <DependentUpon>catLaboratorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catLaboratorio.aspx.designer.cs">
+      <DependentUpon>catLaboratorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\catServicLaboratorio.aspx.cs">
+      <DependentUpon>catServicLaboratorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalogos\catServicLaboratorio.aspx.designer.cs">
+      <DependentUpon>catServicLaboratorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conClientes.aspx.cs">
+      <DependentUpon>conClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conClientes.aspx.designer.cs">
+      <DependentUpon>conClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conColaborador.aspx.cs">
+      <DependentUpon>conColaborador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conColaborador.aspx.designer.cs">
+      <DependentUpon>conColaborador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conConsumo.aspx.cs">
+      <DependentUpon>conConsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conConsumo.aspx.designer.cs">
+      <DependentUpon>conConsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conEmpresa.aspx.cs">
+      <DependentUpon>conEmpresa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conEmpresa.aspx.designer.cs">
+      <DependentUpon>conEmpresa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conEquipos.aspx.cs">
+      <DependentUpon>conEquipos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conEquipos.aspx.designer.cs">
+      <DependentUpon>conEquipos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conInsumos.aspx.cs">
+      <DependentUpon>conInsumos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conInsumos.aspx.designer.cs">
+      <DependentUpon>conInsumos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conLaboratorio.aspx.cs">
+      <DependentUpon>conLaboratorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conLaboratorio.aspx.designer.cs">
+      <DependentUpon>conLaboratorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\conServicLaboratorio.aspx.cs">
+      <DependentUpon>conServicLaboratorio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\conServicLaboratorio.aspx.designer.cs">
+      <DependentUpon>conServicLaboratorio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\opePaquete.aspx.cs">
+      <DependentUpon>opePaquete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operaciones\opePaquete.aspx.designer.cs">
+      <DependentUpon>opePaquete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteMaster.Master.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMaster.Master.designer.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidad\Entidad.csproj">
+      <Project>{51043D66-6B0C-4F51-BE70-FCC5E79B70CF}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{25FA6E6D-0920-4E79-B465-AB241453C5FC}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SiteMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Scripts\jquery-3.4.1.slim.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56211</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

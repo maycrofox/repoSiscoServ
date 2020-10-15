@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="Web_SiscoServ.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> SISCOSERV </title>    
+    <link href="Styles.css" rel="stylesheet" type="text/css" />  
+    <link href="Menu.css" rel="stylesheet" type="text/css" />        
+    <link href="Content/DataTables/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+    <link href="Content/DataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+     
+    <script src="../Scripts/jquery-3.4.1.js" type="text/javascript"></script> 
+    <script src="/Scripts/DataTables/jquery.dataTables.min.js" type="text/javascript"></script>
+
+    <link href="/Content/DataTables/css/jquery.dataTables.min.cdn.css" rel="stylesheet"  type="text/css" />
+    <script src="/Scripts/DataTables/jquery.dataTables.min.cdn.js" type="text/javascript"></script>   
+       
+    <link href="/Content/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="/Scripts/jquery-ui.js" type="text/javascript"></script>
+
+</head>
+<body link="white" alink="yellow" vlink="white">
+    <form id="form1" runat="server">     
+        <div id="conteiner">
+         <div id="header-top">
+              <div id="Logo1" title="Cerrar Sesión">
+          <a href="/default.aspx"> <img alt="" src="/Img/login_2.png" width="30" height="25"/> </a>
+         </div>       
+         <div id="nombreform"> </div>
+          <div id="divusuario" title="Actualizar Contraseña"> <a id="nameuser" href="/Admin/Actualizacontrasena.aspx"> Nombre del usuario </a> </div>             
+         </div>       
+            
+             <div id="content">   
+                 <div id="lateral"><!--  Menu -->                    
+                    <nav>
+		                <ul>
+			                <li><a href="/Inicio.aspx">INICIO</a></li>
+                             <hr style="color: #f0f0f0;" />
+			                <li><a href="#">CATÁLOGOS</a>
+                                <ul>
+                                <li><a href="/Catalogos/catEmpresa.aspx">Empresa</a></li>
+			                    <li><a href="/Catalogos/catColaborador.aspx">Colaborador</a></li>
+                                <li><a href="/Catalogos/catClientes.aspx">Clientes</a></li>  
+                                <li><a href="/Catalogos/catEquipos.aspx">Equipos</a></li>                                  
+                                <li><a href="/Catalogos/catConsumo.aspx">Mat.Consumo</a></li> 
+                                <li><a href="/Catalogos/catInsumos.aspx">Servicios</a></li> 
+                                <li><a href="/Catalogos/catLaboratorio.aspx">Laboratorio</a></li> 
+                                <li><a href="/Catalogos/catServicLaboratorio.aspx">Servic. Laboratorio</a></li>                                                           
+                                </ul>
+                            </li>
+                             <hr style="color: #f0f0f0;" />
+			                <li><a href="#">CONSULTA</a>
+                                <ul>
+                                <li><a href="/Consultas/conEmpresa.aspx">Empresa</a></li>
+			                    <li><a href="/Consultas/conColaborador.aspx">Colaborador</a></li>
+                                <li><a href="/Consultas/conClientes.aspx">Clientes</a></li>
+                                <li><a href="/Consultas/conEquipos.aspx">Equipos</a></li>                                
+                                <li><a href="/Consultas/conConsumo.aspx">Consumo</a></li>     
+                                <li><a href="/Consultas/conInsumos.aspx">Servicios</a></li>
+                                <li><a href="/Consultas/conLaboratorio.aspx">Laboratorio</a></li>
+                                <li><a href="/Consultas/conServicLaboratorio.aspx">Servic. Laboratorio</a></li>      
+                                <li><a href="#">Orden Servicio</a></li>   
+                                <li><a href="#">Ventas</a></li>                   
+                                </ul>
+                            </li>
+                             <hr style="color: #f0f0f0;" />
+			                <li><a href="#">OPERACIONES</a>
+                                <ul>
+                                <li><a href="/Consultas/conEmpresa.aspx">Paquetes</a></li>
+			                    <li><a href="#">Orden Servicio</a></li>
+                                <li><a href="#">Pago Servicio</a></li>                                                                               
+                                </ul>
+                            </li>
+                             <hr style="color: #f0f0f0;" />
+                              <li><a href="#">ADMINISTRACIÓN</a>
+                                <ul>
+                                <li><a href="/Admin/AdminUsuario.aspx">Usuarios</a></li>
+                                 <li><a href="/Admin/AsignarEmpresa.aspx">Asigna Empresa</a></li>	
+                                 <li><a href="/Admin/Actualizacontrasena.aspx">Contraseña</a></li>	
+                                </ul>
+                            </li>
+                             <hr style="color: #f0f0f0;" />
+			                <li><a href="#">ACERCA DE..</a></li>
+                             <hr style="color: #f0f0f0;" />
+			                <li><a href="#">CONTACTO</a></li>
+		                </ul>
+	                </nav>
+                 </div>  <!--  Fin Menu -->         
+                <div id="contenido">
+                    <asp:contentplaceholder id="MainContent" runat="server">                 
+                    </asp:contentplaceholder>                    
+                </div>               
+            </div>             
+        </div>
+        <div id="footer">
+          <div id="logo2">
+            <img src="/Img/img_Logo_.png" width="85" height="25"> 
+          </div> 
+            Copyright @ 2019
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://www.google.com.mx/" Target="_blank" ForeColor="Orange" Style="text-decoration: none"> by the Author JMMay </asp:HyperLink>
+            All Rights Reserved. Sistema de Control de Servicios (SisCoServ) 
+        </div>
+   </form>    
+
+</body>
+</html>
